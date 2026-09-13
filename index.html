@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.o">
+        <title>ICT461 Course Registration</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>ICT461 Course Registration</h1>
+            <p>Web Systems and Technology</p>
+        </header>
+        <main>
+            <section>
+                <h2>Student Registration</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label
+                        for="studentName">Student Name</label>
+                        <input
+                        type="text"
+                        id="studentName"
+                        name="studentName"
+                        required
+                        >
+                        </div>
+                        <div class="form-group">
+                            <label for="studentId">Student ID</label>
+                            <input
+                            type="text"
+                            id="studentId"
+                            name="studentId"
+                            required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            >
+                            </div>
+                            <div class="form-group">
+                                <label for="course">Select Course</label>
+                                <select 
+                                id="course"
+                                name="course"
+                                required>
+                            <option value="">-- Select a course --</option>
+                            <option value="ICT461">
+                                ICT461 - Web Systems and Technology
+                            </option>
+                        </select>
+                            </div>
+                            <fieldset>
+                                <legend>Registration Types</legend>
+                                <label>
+                                    <input
+                                    type="radio"
+                                    name="registrationType"
+                                    value="full-time"
+                                    required
+                                    >
+                                    Full Time
+                                    </label>
+                                    <label>
+                                        <input
+                                    type="radio"
+                                    name="registrationType"
+                                    value="part-time"
+                                    required
+                                    >
+                                    Part Time
+                                    </label>
+                                 </fieldset>
+                                 <button type="submit">Register Course</button>
+                                 <p id="message"
+                                 role="alert"></p>
+                             </form>
+                     </section>
+           </main>
+           <footer>
+            <p>&copy; 2026 ICT461 Course Registration</p>
+           </footer>
+           <script src="script.js"></script>
+    </body>
+</html>
